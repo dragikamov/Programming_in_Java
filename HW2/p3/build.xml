@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="p3">
+
+    <target name="init">
+        <mkdir dir="out/classes"/>
+        <mkdir dir="out/dist_1"/>
+        <mkdir dir="out/dist_2"/>
+        <mkdir dir="doc"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="out/classes"/>
+        <javac srcdir="src" destdir="out/classes"/>
+    </target>
+
+    <target name="javadoc">
+        <javadoc sourcepath="src" destdir="doc"/>
+    </target>
+
+    <target name="dist_1">
+        <jar destfile="out/dist_1/BookArray.jar" basedir="out/classes">
+            <manifest>
+                <attribute name="Main-Class" value="test.BookArray"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run_BookArray">
+        <java jar="out/dist_1/BookArray.jar" fork="true"/>
+    </target>
+
+    <target name="dist_2">
+        <jar destfile="out/dist_2/UseBook.jar" basedir="out/classes">
+            <manifest>
+                <attribute name="Main-Class" value="test.UseBook"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run_UseBook">
+        <java jar="out/dist_2/UseBook.jar" fork="true"/>
+    </target>
+
+    <target name="copy">
+        <cp srcdir="doc" destdir="out/dist_1"/>
+        <cp srcdir="doc" destdir="out/dist_2"/>
+    </target>
+
+    <target name="clean">
+        <delete dir="out"/>
+    </target>
+
+
+</project>

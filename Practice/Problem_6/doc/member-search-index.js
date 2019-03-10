@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"Board","l":"change(char, int, int)"},{"p":"<Unnamed>","c":"Test","l":"main(String[])","url":"main-java.lang.String:A-"},{"p":"<Unnamed>","c":"Board","l":"placeSymbol(char)"},{"p":"<Unnamed>","c":"Board","l":"placeSymbols(char)"},{"p":"<Unnamed>","c":"Board","l":"print()"},{"p":"<Unnamed>","c":"Test","l":"Test()"}]

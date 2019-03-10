@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"test","l":"Main"},{"p":"core.implementation","l":"Movie"},{"p":"core","l":"MovieServices"},{"p":"core.implementation","l":"MovieSorter"}]
